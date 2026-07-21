@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>For You ❤️</title>
+<style>
+body{margin:0;font-family:Arial,sans-serif;background:linear-gradient(135deg,#ffd6e7,#ffeef8);display:flex;justify-content:center;align-items:center;height:100vh;overflow:hidden}
+.page{display:none;text-align:center;padding:20px}
+.active{display:block}
+button{padding:12px 28px;border:none;border-radius:30px;background:#ff4f8b;color:#fff;font-size:18px;cursor:pointer}
+.arrow{font-size:45px;cursor:pointer}
+.big{font-size:60px}
+h1{color:#ff2d75}
+</style>
+</head>
+<body>
+<div id="p1" class="page active">
+<h1>HELLOOOOO... 💖</h1>
+<h2>Hello Babe 🌸</h2>
+<button onclick="show('p2')">START</button>
+</div>
+
+<div id="p2" class="page">
+<div class="big">🎈 🧸 🎂 🧸 🎈</div>
+<h2>Someone has a birthday today! 🎉</h2>
+<p>Ready for your surprise?</p>
+<div class="arrow" onclick="show('p3')">➡️</div>
+</div>
+
+<div id="p3" class="page">
+<h1>🎂 Happy Birthday Naveen 🎂</h1>
+<p style="max-width:600px;margin:auto;line-height:1.8">
+Dear Naveen,<br><br>
+Happy Birthday! 🥳<br><br>
+Congratulations on surviving another year of being the same annoying idiot. 😂<br>
+Thanks for tolerating my random drama, mood swings and endless bakbak.
+You're weird, funny, irritating... but also one of the best friends I have.
+Stay happy, stay healthy, eat lots of cake and don't become more annoying this year. 🤣<br><br>
+Have an amazing year ahead!
+</p>
+<h2 style="color:#ff2d75">❤️ From Utkarsha ❤️</h2>
+</div>
+
+<script>
+function show(id){
+document.querySelectorAll('.page').forEach(p=>p.classList.remove('active'));
+document.getElementById(id).classList.add('active');
+}
+</script>
+</body>
+</html>
